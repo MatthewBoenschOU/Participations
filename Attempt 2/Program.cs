@@ -14,6 +14,7 @@ namespace Attempt_2
             string UserAnswer2 = "";
             double Calculation = 0;
             double Calculation2 = 0;
+            double Test = 0;
 
             do
             {
