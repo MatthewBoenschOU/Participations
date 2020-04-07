@@ -9,12 +9,11 @@ namespace StringPractice
             Console.WriteLine("Enter a message");
             string Message = Console.ReadLine();
 
-            for (int i = 0; i < Message.Length; i=i+2)
-            {
-                char Position = Message[i];
-                Console.WriteLine(Position);
+            int lastletter;
 
-            }
+            lastletter = Message.Length - 1;
+
+            Console.WriteLine(lastletter);
             
             Console.ReadKey();
 
