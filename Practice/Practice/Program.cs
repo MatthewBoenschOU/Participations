@@ -6,17 +6,19 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            int input = Convert.ToInt32(Console.ReadLine());
-            int answer;
+            static double SecretCalculatio (int value1, int value2)
+            {
+                value1 = 5;
+                value2 = 15;
+                return value1 + value2;
+                return value2 - value1;
+                return value2 / value2;
+            }
 
-            if (input == 10)
-            {
-                answer = 10 * input;
-            }
-            else
-            {
-                answer = input;
-            }
+            int v1 = 5;
+            int v2 = 15;
+
+            Console.WriteLine(SecretCalculatio(v1, v2));
         }
     }
 }
