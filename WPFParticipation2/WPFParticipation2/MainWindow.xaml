@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPFParticipation2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFParticipation2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="White" Offset="0.003"/>
+                <GradientStop Color="#FFFF39C0" Offset="0.279"/>
+                <GradientStop Color="#FF5439FF" Offset="1"/>
+                <GradientStop Color="#FF39D68F" Offset="0.623"/>
+                <GradientStop Color="#FFAD79CB" Offset="0.849"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <RadioButton x:Name="RBEven" Content="Click here for even" HorizontalAlignment="Left" Margin="161,190,0,0" VerticalAlignment="Top" Height="30" Width="185" FontSize="20" Checked="RBEven_Checked"/>
+        <RadioButton x:Name="RBOdd" Content="Click here for odd" HorizontalAlignment="Left" Margin="456,190,0,0" VerticalAlignment="Top" FontSize="20" Checked="RBOdd_Checked"/>
+        <TextBox x:Name="TxtBox" HorizontalAlignment="Left" Height="55" Margin="316,88,0,0" TextWrapping="Wrap" Text="How high do you want to count to?" VerticalAlignment="Top" Width="162" FontSize="20" TextChanged="TxtBox_TextChanged">
+            <TextBox.Background>
+                <SolidColorBrush Color="Red" Opacity="0.4"/>
+            </TextBox.Background>
+        </TextBox>
+        <ListBox x:Name="LBEven" HorizontalAlignment="Left" Height="187" Margin="10,222,0,0" VerticalAlignment="Top" Width="336">
+            <ListBox.Background>
+                <SolidColorBrush Color="#FF46A296" Opacity="0.3"/>
+            </ListBox.Background>
+        </ListBox>
+        <ListBox x:Name="LBOdd" HorizontalAlignment="Left" Height="187" Margin="456,222,0,0" VerticalAlignment="Top" Width="326" SelectionChanged="ListBox_SelectionChanged">
+            <ListBox.Background>
+                <SolidColorBrush Color="#FF238F41" Opacity="0.3"/>
+            </ListBox.Background>
+        </ListBox>
+
+    </Grid>
+</Window>
